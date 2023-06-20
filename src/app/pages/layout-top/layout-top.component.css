@@ -1,0 +1,15 @@
+
+.topnav {
+    display: flex;
+    justify-content: space-between;   
+    background-color: #f1f1f1;
+  }
+
+  .topnav-left {
+    width: 80%; 
+  }
+  
+  .topnav-right {
+    width: 20%; /* Establece el ancho deseado, por ejemplo, 50% */
+  }
+  

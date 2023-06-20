@@ -1,1 +1,10 @@
-<p>perfil works!</p>
+<div class="topnav-perfil">
+    <span>{{ user.name }}</span>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAB2CAMAAAAqeZcjAAAAZlBMVEX///8AAAB9fX1vb29eXl6Hh4f19fXe3t76+vrj4+MlJSXt7e1FRUWbm5vm5uZbW1tRUVGNjY2oqKg3Nze5ubnW1tYSEhLNzc2Tk5NKSkrBwcFjY2N1dXWvr6/Hx8c+Pj4aGhovLy/+UwR/AAAD+UlEQVRoge1b2ZaiMBAF0Qgi+w4i+P8/Oa2dCqCRVLDwnJnhvnasm1RqD20YGzZs+DLYMS13PyhTh32L0/f25gh7z/8CaRqaLwjTtUlPr6R3nNYkdjo56R2dsxZr/J70jngd1ss8q2leViC1myelBpYVPCm9sVdl7Q6Z+/BX5he7ZE3e3SC7qichgtXV8LcdLetgTTJXGbkVqV1lQmzgyv7uBmJBRsdqCzW+VaK4hDPd9cZK1hEvmZoZXN1+bhXkhxNVTvK4wHxWf3bOl3lEtDcur5hfVvBlNxrWKxixamGA2x4SEIuVrgFuRhMz+l9hnXolj5M9BesR7xjgaEcC2hQvC3ZIUWp4Gprr6VzI+hUVYtbyIEqR70MNUReNLSpw/hVVYtaWPB38vbSVRgzgaagioG2QofEOHh4bAtpII8DzpBER0ELokVYzU7j4gKYE5LNavbQmTEGMy7LUS3lkMUnqiworDDZIES0MozWRnsu91mxJaN0cd1w4bI4wPgzgyhSuCzUNVeMHaXTeMUQxTZHkH4DjznkGFHoYi0fCh9s1r0rWnHBuMzR8b6y0FQtIW76hqd5J7NQdul+KLDASfBOCT/GTI7F4aG9vRM4DENZ8J46Oohuyj9F4VEVmxTLen1NdojhN4+gyHY+RsxqGYyqxykSMzczg7ujWGrZ6c6xUba0ETvCOtFlt5PhA0UhJaVraOThRNeWsonVPCrCddNdUXZIkVXNIHfJB4yw3+8FXGTds+AfgZnXqRQeByEvrjDi5P+HYXpJeFhz7xGpXyLUPzjKRMQ5IInJm1kqe9l4RtpQ5l3mKgw64eWT3HL95T5TjFJNE6kxRy7yiI3gdOUjk5udwzxGec8mCw4ek/u1JoBUXL5fnFrH1tOz2USdUT4WVM9o7ltO1iAnLO0wqxUAp6Dop8BZXktFIyB5lJtn4Y4GFQ7GRMSVolV1HHr7IsEZ3ddCIPWy0W9RUdoqhk841raMeXEq7xy7ETxNtX/AHRWuW7WIWZYYLgjsTeUNzRiV+t3AiLRoHrUGguFjEU5ccIpBrXK8rdLQ4fTJxS3g1i67ug3JBDB3Qs5tigYJeIS4Ka82h7j7lAJ0hrQrmeP2HYzwfisy3E8MJYJcfDyM8Ha2BLSQfF4EMohXGMiGUE8wswaoQqQi2SPH5BHywgVAceM+CpPUKKBTUPgQzWpJptI/VMny1Q/OWAyFA+X0PDDSJRnngQ6rJFZSoRM0beKOqQAEjoGE1DC5OVUXyUhf1SIwBUt4Ztzs0cK/18BRB8zpoiJcaxdOFw7NGYBGBK7mfN+XhEz9izPcyG+0XaG30SEYPySzrasdVdsfM25HD+9p/AWzY8F/gD5SfK6d6SoM5AAAAAElFTkSuQmCC" alt="Icono" class="icon" (click)="toggleMenu()">
+    <div class="dropdown-menu" [ngClass]="{ 'show': isMenuOpen }">
+        <a href="#">Opción 1</a>
+        <br>
+        <a href="#">Opción 2</a>
+      </div>
+  </div>
+  
