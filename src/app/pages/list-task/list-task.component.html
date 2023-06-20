@@ -1,1 +1,10 @@
-<p>list-taks works!</p>
+<div *ngFor="let item of listTask" class="card">
+    <img src="data:image/png;base64,{{item.imagenBase64}}">
+    <strong> {{item.titulo}}</strong>
+    <p>
+        {{item.descripcion}}
+    </p>
+    <button (click)="editar(item)"> Editar</button>
+
+
+</div>

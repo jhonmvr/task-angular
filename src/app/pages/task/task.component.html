@@ -1,1 +1,10 @@
-<p>taks works!</p>
+<div class="card">
+    <img *ngIf="taks?.imagenBase64" src="data:image/png;base64,{{taks.imagenBase64}}">
+    <input [formControl]="titulo" placeholder="Titulo">
+    <p>
+        {{taks?.descripcion}}
+    </p>
+    <button (click)="guardar()"> Guardar</button>
+
+
+</div>

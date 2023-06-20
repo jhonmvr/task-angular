@@ -8,6 +8,7 @@ import { LayoutBodyComponent } from './layout-body/layout-body.component';
 import { MenuComponent } from './layout-top/menu/menu.component';
 import { PerfilComponent } from './layout-top/perfil/perfil.component';
 import { ListTaskComponent } from './list-task/list-task.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
 	{
@@ -15,6 +16,10 @@ const routes: Routes = [
 		component: PagesComponent,
 		children: [
 
+      {
+        path: 'task/:id',
+        component: TaskComponent
+      },
       {
         path: 'task',
         component: TaskComponent
@@ -38,6 +43,8 @@ const routes: Routes = [
     ListTaskComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     CommonModule,
     RouterModule.forChild(routes),
   ]

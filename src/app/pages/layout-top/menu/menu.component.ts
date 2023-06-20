@@ -15,5 +15,5 @@ interface Menu{
 })
 export class MenuComponent {
 
-  menu:Menu[] = [{titulo:'Task',id:1,idPadre:0,icon:'',ruta:'task'},{titulo:'Lista de tarreas',id:1,idPadre:0,icon:'',ruta:'task'},{titulo:'Perfiles',id:1,idPadre:0,icon:'',ruta:'task'}]
+  menu:Menu[] = [{titulo:'Task',id:1,idPadre:0,icon:'',ruta:'task'},{titulo:'Lista de tarreas',id:1,idPadre:0,icon:'',ruta:'list-task'},{titulo:'Perfiles',id:1,idPadre:0,icon:'',ruta:'task'}]
 }
